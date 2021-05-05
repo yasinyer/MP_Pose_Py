@@ -25,7 +25,7 @@ with mp_pose.Pose(
         image.flags.writeable = False
         results = pose.process(image)
 
-        # Detect data
+        # Detect
         if results:
             noseX = results.pose_landmarks.landmark[0].x
             print(noseX)
